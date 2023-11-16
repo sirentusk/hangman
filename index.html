@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangman: Pyscript Python Script</title>
+<link rel="stylesheet" type="text/css" href="python.css">
+<link rel="alternate" href="https://hangman.sirenwatcher.dev/" hreflang="en-au">
+<link rel="canonical" href="https://hangman.sirenwatcher.dev/">
+<link rel="icon" href="images/hangman.svg">
+<meta name="author" content="Siren Watcher">
+<meta name="keywords" content="Pyscript, hangman, Python HTML, Hangman python, Pyscript python, Python in html, embed python in html">
+<meta name="description" content="Explore a PyScript example through playing hangman using this Python variant, showcasing a fun way to delve into the realm of programming python in HTML.">
+<meta name="subject" content="Pyscript Example">
+<meta name="theme-color" content="#FFEABD">
+<meta name="robots" content="index, follow">
+<meta name="date" content="2023-10-24">
+<meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+<meta property="og:updated_time" content="updatedtime">
+<meta property="og:url" content="https://hangman.sirenwatcher.dev/">  
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Hangman Game in Python Pyscript">
+<meta property="og:title" content="Hangman Game in Python Pyscript">  
+<meta property="og:description" content="Explore a PyScript example through playing hangman using this Python variant, showcasing a fun way to delve into the realm of programming python in HTML.">  
+<meta property="og:updated_time" content="2023-10-25">
+<meta property="og:url" content="https://hangman.sirenwatcher.dev/">
+<meta property="og:image" itemprop="image" content="images/hangman.svg">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link itemprop="thumbnailUrl" href="images/hangman.svg">
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<script src="https://kit.fontawesome.com/7b921025f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<h1>Let's play Hangman!</h1>
+<p class="center">Guess the fruit.</p>
+
+<div id="result"></div>
+<py-script src="python.py" output="result"></py-script>
+
+<main>
+    <section>
+        <button py-click="handle_click('a')">A</button>
+        <button py-click="handle_click('b')">B</button>
+        <button py-click="handle_click('c')">C</button>
+        <button py-click="handle_click('d')">D</button>
+        <button py-click="handle_click('e')">E</button>
+        <button py-click="handle_click('f')">F</button>
+        <button py-click="handle_click('g')">G</button>
+        <button py-click="handle_click('h')">H</button>
+        <button py-click="handle_click('i')">I</button>
+        <button py-click="handle_click('j')">J</button>
+        <button py-click="handle_click('k')">K</button>
+        <button py-click="handle_click('l')">L</button>
+        <button py-click="handle_click('m')">M</button>
+        <button py-click="handle_click('n')">N</button>
+        <button py-click="handle_click('o')">O</button>
+        <button py-click="handle_click('p')">P</button>
+        <button py-click="handle_click('q')">Q</button>
+        <button py-click="handle_click('r')">R</button>
+        <button py-click="handle_click('s')">S</button>
+        <button py-click="handle_click('t')">T</button>
+        <button py-click="handle_click('u')">U</button>
+        <button py-click="handle_click('v')">V</button>
+        <button py-click="handle_click('w')">W</button>
+        <button py-click="handle_click('x')">X</button>
+        <button py-click="handle_click('y')">Y</button>
+        <button py-click="handle_click('z')">Z</button>
+    </section>
+    <aside>
+        <button py-click="reveal_word('Reveal')">Reveal Answer</button>
+        <br>
+        <button><a href="http://hangman.sirenwatcher.dev/">Refresh Page</a></button>
+    </aside>
+</main>
+
+<hr>
+<p class="center">I am currently learning to use <a href="https://pyscript.net/">pyscript</a>. The aim of this exercise was to bypass flask/javascript and just use pure pyscript, python, and html/css.</p>
+<p>This proved fine until loading images. Somethings are hard without javascript, but was a worthy exercise to see how far I could push python within pyscript for now. It is impossible to use images as pyscript has limited libraries available, it's main libraries in pyodide are NumPy, Pandas, SciPy, Matplotlib and Scikit-learn. Requiring asyncio for installation as of 2023. Trying to use matplotlib, scikit-image, pillow, os, micropip, urlopen, io, base64, requests, etc were all unable to yeild the result of having the image load in pyscript due to the limitations of its libraries.</p>
+<p>Running a base code like:</p>
+<code>def display_image():
+<br>
+img_url = 'https://python-hangman.pages.dev/images/hangman1.png'
+<br>
+img_tag = f'<img src="{img_url}">'
+<br>
+pyscript.write('image-container', img_tag)
+<br>
+# Call the function to display the image
+<br>
+display_image()
+</code>
+<p>Will have the image load, but fails to have it embed, instead just printing it as a string.</p>
+<code>< img src="https://python-hangman.pages.dev/images/hangman1.png"></code>
+<p>The above being it's printout on a html page.</p>
+<p class="end">So I have abandoned this until later.</p>
+
+</body>
+</html>

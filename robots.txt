@@ -1,0 +1,37 @@
+User-agent: Googlebot
+User-agent: AhrefsBot
+User-agent: DuckDuckBot
+User-agent: Bingbot
+User-Agent: FacebookBot
+User-agent: facebot
+User-agent: YandexBot
+User-agent: Slurp
+User-agent: Discordbot
+User-agent: Applebot
+User-agent: Swiftbot
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: Baiduspider
+Crawl-delay: 5
+
+User-agent: Sogou web spider
+Crawl-delay: 5
+
+User-agent: dotbot
+Crawl-delay: 5
+
+User-agent: petalbot
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Crawl-delay: 5
+
+User-agent: *
+Disallow: 
+
+Allow: /images
+Allow: /archives
+Allow: /tags
+Allow: /categories

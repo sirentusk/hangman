@@ -1,0 +1,107 @@
+div#result {
+    text-align: center;
+    margin: 100px;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.end {
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    background-image: -moz-linear-gradient(to right, #6B5E38, #8d9867, #726798, #8d9867, #6B5E38);
+    background-image: -webkit-linear-gradient(to right, #6B5E38, #8d9867, #726798, #8d9867, #6B5E38);
+    background-image: -o-linear-gradient(to right, #6B5E38, #8d9867, #726798, #8d9867, #6B5E38);
+    background-image: linear-gradient(to right, #6B5E38, #8d9867, #726798, #8d9867, #6B5E38);
+    height: 1px;
+    height: 10px;
+    margin: 100px;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 48px;
+    background: linear-gradient(to right, #6B5E38, #8d9867, #726798, #8d9867, #6B5E38);
+    -webkit-background-clip: text; /* Chromium */
+    -moz-background-clip: text; /* Gecko */
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #726798;
+    text-underline-offset: 10px;
+}
+
+p {
+    line-height: 3;
+}
+
+#python {
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
+    letter-spacing: 2px;
+    padding: 100px 0px 100px 0px;
+    text-shadow:
+    1px 0 0 grey, /* Outline right */
+    0 1px 0 grey, /* Outline top */
+    -1px 0 0 grey, /* Outline left */
+    0 -1px 0 grey, /* Outline bottom */
+    3px 3px 1px rgb(182, 182, 182), /* Shadow right */
+    3px 3px 1px rgb(182, 182, 182), /* Shadow top */
+    3px 3px 1px rgb(182, 182, 182), /* Shadow left */
+    3px 3px 1px rgb(182, 182, 182), /* Shadow bottom*/
+    4px 5px 5px rgba(0, 0, 0, 0.5), /* Shadow blur right */
+    1px 10px 10px rgba(0, 0, 0, 0.5), /* Shadow blur top */
+    1px 15px 30px rgba(0, 0, 0, 0.5), /* Shadow blur left */
+    1px 15px 30px rgba(0, 0, 0, 0.5); /* Shadow blur bottom*/
+}
+
+button {
+    margin: 10px;
+    padding: 8px 12px 8px 12px;
+    background: conic-gradient(from 0deg, #8d9867 0deg, #6B5E38 36deg, #726798 72deg, #6B5E38 108deg, #8d9867 144deg, #8d9867 180deg, #6B5E38 216deg, #726798 252deg, #6B5E38 288deg, #8d9867 324deg);
+    border-radius: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+py-terminal.py-terminal-docked .py-terminal {
+    background-color: transparent;
+    color: transparent;
+}
+
+py-script {
+    top: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(255, 234, 189);
+}
